@@ -550,7 +550,7 @@ bmp2chr (const char *bmp_in, const char *chr_out)
     FILE *in, *out;
     struct bmp_header header;
     struct bmp_dib dib;
-    int i, c;
+    int i, c = 0;
 
     in = fopen (bmp_in, "rb");
     if (in == NULL)

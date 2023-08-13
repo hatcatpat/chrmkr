@@ -4,7 +4,7 @@ imgviewer=feh
 all: chrmkr
 
 chrmkr: chrmkr.c
-	gcc -g -o chrmkr *.c -Wall -ansi -lpng
+	gcc -o chrmkr *.c -Wall -ansi -lpng -O3
 
 run: all
 	./chrmkr
