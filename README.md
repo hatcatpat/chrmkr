@@ -11,7 +11,7 @@ this program allows you to convert chr files to/from common image formats (png, 
 - libpng is currently the only dependency
 - ansi c
 - gnu make
-- gcc, although should work with tcc if you remove the -ansi flag
+- gcc, although should work with tcc
 - `make`
 - `make run`
 - `make clean`
