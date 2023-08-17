@@ -1,6 +1,4 @@
 /* TODO:
- * - remove libpng dependency?
- * - jpeg?
  * - commandline options?
  * 		- palette options (chr -> *)
  * */
@@ -360,6 +358,9 @@ chr2png (const char *chr_in, const char *png_out)
                 }
             png_write_row (png, row);
         }
+
+    png_write_end (png, info);
+    png_destroy_write_struct (&png, &info);
 
     fclose (out);
     return 0;
